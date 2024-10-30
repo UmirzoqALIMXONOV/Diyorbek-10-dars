@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+    color: rgb(79, 77, 77);
+    text-transform: uppercase;
+    text-shadow:  5px 5px 5px ;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box{
+    box-shadow: 0 0 5px 2px rgb(148, 145, 145);
+    width: 23%;
+    padding-bottom: 0.3rem;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.box:hover{
+    box-shadow: 0 0 10px 5px rgb(109, 106, 106); 
+    transform: translateY(-5px);
+}
+.sales{
+    background-color: orange;
+    color: red;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    right: -37px;
+    transform: rotate(45deg);
+}
+.box img{
+    width: 100%;
+}
+h4{
+    margin: 1rem;
+    color: gray;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+del{
+    color: red;
+}
+span{
+    color: green;
+    font-weight: 600;
+    font-size: 18px;
+}
+.star{
+    color: orange;
+    font-size: 20px;
+}
+
+@media (min-width:0px) and (max-width:380px){
+    h1{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+@media (min-width:380px) and (max-width:610px){
+    h1{
+        font-size: 25px;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 48%;
+    }
+}
+
+@media (min-width:610px) and (max-width:920px){
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 31%;
+    }
+}
+
+@media (min-width:920px) and (max-width:1200px){
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 23%;
+    }
+}
